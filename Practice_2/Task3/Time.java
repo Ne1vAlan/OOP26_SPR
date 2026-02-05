@@ -1,4 +1,4 @@
-package Practice_2;
+package Practice_2.Task3;
 
 class Time {
 
@@ -57,3 +57,4 @@ class Time {
         hour = hour % 24;
     }
 }
+
