@@ -1,30 +1,29 @@
 package Practice_3_2.Delivery.Service;
 
-import Practice_3_2.Delivery.Model.Vehicle;
 
-import java.util.List;
+import java.util.Objects;
 
-public class DeliveryService {
+class Person {
 
-    public void printAllVehicles(List<Vehicle> vehicles) {
-        for (Vehicle v : vehicles) {
-            System.out.println("-------------------");
-            System.out.println(v.getVehicleInfo());
-        }
+    private String name;
+    private int age;
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        return age == person.age && Objects.equals(name, person.name);
     }
 
-    public void calculateAllDeliveries(List<Vehicle> vehicles) {
-        for (Vehicle v : vehicles) {
-            System.out.println(v.getClass().getSimpleName() +
-                    " delivery cost: " + v.calculateDeliveryCost());
-        }
-    }
+    @Override
+    public int hashCode() {
 
-    public double calculateTotalCost(List<Vehicle> vehicles) {
-        double total = 0;
-        for (Vehicle v : vehicles) {
-            total += v.calculateDeliveryCost();
-        }
-        return total;
+        return Objects.hash(name, age);
+
     }
 }
