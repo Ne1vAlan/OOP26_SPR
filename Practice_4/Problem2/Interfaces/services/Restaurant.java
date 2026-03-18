@@ -1,6 +1,6 @@
-package Practice_4.Interfaces.services;
+package Practice_4.Problem2.Interfaces.services;
 
-import Practice_4.Interfaces.model.*;
+import Practice_4.Problem2.Interfaces.model.*;
 
 public class Restaurant {
 

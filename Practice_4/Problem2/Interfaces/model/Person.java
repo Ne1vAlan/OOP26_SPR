@@ -1,4 +1,4 @@
-package Practice_4.Interfaces.model;
+package Practice_4.Problem2.Interfaces.model;
 
 public class Person {
     protected String name;

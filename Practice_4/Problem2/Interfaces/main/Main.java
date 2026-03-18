@@ -1,7 +1,7 @@
-package Practice_4.Interfaces.main;
+package Practice_4.Problem2.Interfaces.main;
 
-import Practice_4.Interfaces.model.*;
-import Practice_4.Interfaces.services.Restaurant;
+import Practice_4.Problem2.Interfaces.model.*;
+import Practice_4.Problem2.Interfaces.services.Restaurant;
 
 public class Main {
     public static void main(String[] args) {
