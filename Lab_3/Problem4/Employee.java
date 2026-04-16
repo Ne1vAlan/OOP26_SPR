@@ -43,6 +43,7 @@ public class Employee extends Person implements Comparable<Employee>, Cloneable 
 
     @Override
     public Employee clone() {
+        Object o;
         return new Employee(name, salary, (Date) hireDate.clone(), insuranceNumber);
     }
 }
